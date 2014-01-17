@@ -4,7 +4,7 @@
 while /usr/bin/true
 do
   date=`/bin/date +%s`
-  taken=`(time -p curl --silent -o /dev/null  --max-time 15 http://icons.ljtoys.org.uk/mi/foo) 2>&1`
+  taken=`(time -p curl --silent -o /dev/null  --max-time 15 http://82.113.145.88/small.txt) 2>&1`
   retval=$?
   if [ "$retval" == "0" ]; then
     real=`echo $taken | grep 'real' | cut -d ' ' -f2`
